@@ -1,4 +1,4 @@
-package com.api.users.exceptionHandler.dto;
+package com.api.users.exceptionhandler.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
