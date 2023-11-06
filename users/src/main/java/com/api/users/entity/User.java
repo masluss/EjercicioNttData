@@ -17,7 +17,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Pattern(regexp = "^[0-9-]{1,10}$", message = "It must contain between 1 and 10 numeric digits or hyphens (-).")
     private String document;
     private String firstName;
     private String middleName;
@@ -27,7 +26,4 @@ public class User {
     private String phoneNumber;
     private String address;
     private String city;
-    @ManyToOne
-    @JoinColumn(name = "document_type_id")
-    private DocumentType documentType;
 }
